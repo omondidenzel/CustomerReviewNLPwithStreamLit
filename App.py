@@ -9,7 +9,7 @@ st.write("""This apps predicts **reviews** by customers.""")
 review = st.text_input("Review input","Type in your review")
 
 #Load model
-file_name = "NLP/LogisticRegressionModel.pkl"
+file_name = "LogisticRegressionModel.pkl"
 loadfile = open(file_name, 'rb')
 loadedModel = pickle.load(loadfile)
 value = loadedModel.predict([review])
